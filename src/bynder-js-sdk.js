@@ -2,7 +2,7 @@ require("isomorphic-form-data");
 const axios = require("axios");
 const { basename } = require("path");
 const isUrl = require("is-url");
-const joinUrl = require("proper-url-join");
+const joinUrl = require("proper-url-join").default;
 const queryString = require("query-string");
 const simpleOAuth2 = require("simple-oauth2");
 const pkg = require("../package.json");
